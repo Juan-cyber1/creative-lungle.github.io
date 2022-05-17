@@ -16,32 +16,37 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-default.min.css">
 
-    <title>Creative Jungle</title>
+    <!-- Fonts -->
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Questrial&display=swap"
+            rel="stylesheet">
+        <title>Creative Jungle</title>
 </head>
 <div class="slider_nav">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 bg-dark-2 nav-fixed m-3">
-                <nav class="navbar-expand-lg navbar-dark d-lg-flex nav_jungle">
+            <div class="col-lg-5 bg-dark-2 nav-fixed m-lg-3">
+                <nav class="navbar navbar-expand-lg navbar-dark d-lg-flex nav_jungle">
                     <a class="navbar-brand" href="#"><img src="./img/creative_jungle_logo.svg" alt="" width="90"
                             height="72" class="d-inline-block align-text-top"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn-nav"
+                        aria-controls="btn-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
+                    <div class="navbar-dark collapse navbar-collapse" id="btn-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#about">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
+                                <a class="nav-link" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contácto</a>
+                                <a class="nav-link" href="#">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -56,9 +61,9 @@
         <div class="container bg-dark">
             <div class="row">
                 <div class="col-md-6 col-lg-6 pt-100">
-                    <div class="col-md- py-4">
-                        <h1 class="text-light">Titulo Creativo que Llame La Atención de Todos</h1>
-                        <p class="text-justify text-light">Lorem Ipsum is simply dummy text of the printing and
+                    <div class="col-md-">
+                        <h1 class="text-light py-3">Titulo Creativo que Llame La Atención de Todos</h1>
+                        <p class="text-justify text-light py-3">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been the industry's standard dummy text ever
                             since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -67,7 +72,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 bg-1 vh-75 text-center order-2">
-                    <!--   <img src="./img/section_1.png" alt="" class="img-responsive"> -->
+                </div>
+                <div class="img-inicio text-center col-md-6">
+                    <img src="./img/section_1.png" alt="" class="img-fluid img-inicio">
                 </div>
             </div>
         </div>
@@ -107,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid py-5 cont-bg">
+    <section class="container-fluid py-3 cont-bg" id="about">
         <div class="container bg-id-corp">
             <div class="row align-items-center">
                 <div class="cont-bg d-lg-flex align-items-center">
@@ -119,7 +126,8 @@
                                 <ul class="splide__list">
                                     <li class="splide__slide p-3">
                                         <div class="row p-4 bg-gray-2 card-modal align-items-center m-4">
-                                            <div class="col-md-3"><img src="./img/logo_vm.png" alt="" class="img-fluid">
+                                            <div class="col-md-3 text-center"><img src="./img/logo_vm.png" alt=""
+                                                    class="img-fluid img-card-slide">
                                             </div>
                                             <div class="col-md-9">
                                                 <h3 class="title-card">Lorem, ipsum dolor.</h3>
@@ -127,8 +135,9 @@
                                                     typesetting industry. Lorem Ipsum has been the industry's
                                                     standard dummy text ever since the 1500s,
                                                 </p>
-                                                <div class="col-md-3"><img src="./img/creative_jungle_logo.svg" alt=""
-                                                        class="img-fluid"></div>
+                                                <div class="col-md-3 text-center"><img
+                                                        src="./img/creative_jungle_logo.svg" alt=""
+                                                        class="img-fluid img-card-slide"></div>
                                                 <div class="col-md-9">
                                                     <ul class="ul-card">
                                                         <li>Manual de marca</li>
@@ -145,7 +154,7 @@
                                             </div>
                                     </li>
                                     <li class="splide__slide p-3">
-                                        <img src="./img/card_1.png" alt="" class="img-fluid">
+                                        <img src="./img/card_1.png" alt="" class="img-fluid img-women">
                                     </li>
                                 </ul>
                             </div>
@@ -156,9 +165,192 @@
         </div>
         </div>
     </section>
-    <section class="container-fluid planes-cont">
+    <section class="container-fluid py-3 planes-cont" id="servicios">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="cont-bg d-lg-flex align-items-center">
+                    <div class="bg-grey vh-60 w-100">
+                    </div>
+                    <div class="row p-absolute cont-info-planes align-items-center">
+                        <div class="col-md-4 bg-3 vh-60 text-center order-lg-2">
+                            <img src="./img/man_creative.svg" alt="" class="img-fluid img-women">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 order-xs-2">
+                                    <h2>Plan básico</h2>
+                                    <p> Ipsum is simply dummy text of the prin- ting and typesetting industry. Lorem
+                                        Ipsum
+                                        has
+                                        been the industry's standard dummy text ever
+                                        since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to</p>
+                                    <ul>
+                                        <li>Lorem Ipsum is simply dummy text of the ting</li>
+                                        <li>and typesetting industry. Lorem Ipsum has</li>
+                                        <li>been the industry's standard dummy text</li>
+                                        <li>ever since the 1500s, when an unknown</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 text-center">
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="container-fluid py-3 planes-cont">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="cont-bg d-lg-flex align-items-center">
+                    <div class="bg-blue vh-60 w-100">
+                    </div>
+                    <div class="row p-absolute cont-info-planes-2 align-items-center">
+                        <div class="col-md-4 bg-4 vh-60 text-center">
+                            <img src="./img/man_creative.svg" alt="" class="img-fluid img-hand">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row align-items-center text-light">
+                                <div class="col-md-7 order-xs-2">
+                                    <h2>Plan básico</h2>
+                                    <p> Ipsum is simply dummy text of the prin- ting and typesetting industry. Lorem
+                                        Ipsum
+                                        has
+                                        been the industry's standard dummy text ever
+                                        since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to</p>
+                                    <ul>
+                                        <li>Lorem Ipsum is simply dummy text of the ting</li>
+                                        <li>and typesetting industry. Lorem Ipsum has</li>
+                                        <li>been the industry's standard dummy text</li>
+                                        <li>ever since the 1500s, when an unknown</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 text-center">
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-3 planes-cont">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="cont-bg d-lg-flex align-items-center">
+                    <div class="bg-grey vh-60 w-100">
+                    </div>
+                    <div class="row p-absolute cont-info-planes align-items-center">
+                        <div class="col-md-4 bg-3 vh-60 text-center order-lg-2">
+                            <img src="./img/man_creative.svg" alt="" class="img-fluid img-women">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row align-items-center">
+                                <div class="col-md-7 order-xs-2">
+                                    <h2>Plan básico</h2>
+                                    <p> Ipsum is simply dummy text of the prin- ting and typesetting industry. Lorem
+                                        Ipsum
+                                        has
+                                        been the industry's standard dummy text ever
+                                        since the 1500s, when an unknown printer
+                                        took a galley of type and scrambled it to</p>
+                                    <ul>
+                                        <li>Lorem Ipsum is simply dummy text of the ting</li>
+                                        <li>and typesetting industry. Lorem Ipsum has</li>
+                                        <li>been the industry's standard dummy text</li>
+                                        <li>ever since the 1500s, when an unknown</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 text-center">
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                    <div class="cont-btn py-1">
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                        <a href="" class="btn btn-primary">Lorem, ipsum.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <footer class="row row-cols-5 py-5 my-5 border-top">
+                <div class="col">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <p class="text-muted">© 2021</p>
+                </div>
+
+                <div class="col">
+
+                </div>
+
+                <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -174,6 +366,10 @@
 </html>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     .bg-1 {
         background-image: url(./img/section_1.png);
         background-repeat: no-repeat;
@@ -183,6 +379,29 @@
 
     .bg-blue {
         background-color: #005874;
+        transform: rotateX(0deg) rotateY(359deg);
+        transform-style: preserve-3d;
+        border-radius: 10px;
+    }
+
+    .bg-dark p {
+        text-align: justify;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+
+    .bg-dark h1 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-weight: 700;
+    }
+
+    .bg-dark h2 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-weight: 700;
+    }
+
+    .bg-dark h3 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-weight: 700;
     }
 
     .bg-dark-2 {
@@ -191,12 +410,39 @@
 
     .bg-gray {
         background-color: #606060;
-        transform: rotateX(0deg) rotateY(359deg);
+        transform: rotateX(0deg) rotateY(358deg);
         transform-style: preserve-3d;
+        border-radius: 10px;
     }
+
+    .bg-grey {
+        background-color: #c3c3c3;
+        transform: rotateX(0deg) rotateY(1deg);
+        transform-style: preserve-3d;
+        border-radius: 10px;
+    }
+
+    /* 
+    .bg-grey {
+    background-image: url(./img/logo_vm.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    } */
 
     .bg-gray-2 {
         background-color: #C3C3C3;
+    }
+
+    .btn-primary {
+        color: #ffffff;
+        background-color: #005772;
+        border-color: #45c4b0;
+    }
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #212529;
+        border-color: #d9f500;
     }
 
     .card-modal {
@@ -205,8 +451,9 @@
 
     .bg-green {
         background-color: #D9F500;
-        transform: rotateX(0deg) rotateY(1deg);
+        transform: rotateX(0deg) rotateY(2deg);
         transform-style: preserve-3d;
+        border-radius: 10px;
     }
 
     .cont-bg {
@@ -220,7 +467,7 @@
 
     }
 
-    .nav_jungle {}
+
 
     .pt-100 {
         padding-top: 100px;
@@ -243,9 +490,18 @@
             background-color: transparent;
         }
 
+        /* nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
         .bg-2 {
             position: absolute;
             left: 30%;
+        }
+
+        .bg-3 {
+            position: absolute;
         }
 
         .cont-bg {
@@ -257,9 +513,23 @@
             left: 15%;
             top: 20%;
         }
+
+        .img-inicio {
+            display: none;
+        }
+
         .img-man {
             display: none;
         }
+
+        .img-women {
+            display: none;
+        }
+
+        .img-hand {
+            display: none;
+        }
+
         .p-absolute {
             position: absolute;
         }
@@ -271,17 +541,35 @@
             width: 100%;
         }
 
+        .bg-3 {
+            background-image: url(./img/man_creative.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: 70%;
+        }
+
+        .bg-4 {
+            background-image: url(./img/man_creative.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: 70%;
+        }
+
         .vh-60 {
-        height: 60vh;
-    }
-    }
-
-    @media(min-width:769px) {
-        
+            height: 60vh;
+        }
     }
 
-    @media(max-width:768px) {
+    @media(min-width:769px) {}
+
+    @media(max-width:991px) {
         .bg-blue {
+            display: none;
+        }
+
+        .bg-1 {
             display: none;
         }
 
@@ -293,12 +581,33 @@
             display: none;
         }
 
+        .bg-2 {
+            background-color: #D9F500;
+        }
+
+        .cont-info-planes {
+            background-color: #C3C3C3;
+        }
+
+        .cont-info-planes-2 {
+            background-color: #005772;
+        }
+
         .cont-info {
             background-color: #606060;
         }
 
-        /* .bg-2 {
-            background-color: #D9F500;
-        } */
+        .img-man {
+            width: 16rem;
+
+        }
+
+        .img-inicio img {
+            width: 10rem;
+        }
+
+        .img-card-slide {
+            width: 5rem;
+        }
     }
 </style>
